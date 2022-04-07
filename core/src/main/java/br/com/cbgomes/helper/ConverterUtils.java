@@ -24,12 +24,4 @@ public record ConverterUtils<T>(ModelMapperConfiguration modelMapperConfiguratio
         return modelMapperConfiguration.modelMapper().map(request, type);
     }
 
-    public T convertEntityToObjectOutputPort(T entity, Class<T> type) {
-        return modelMapperConfiguration.modelMapper().map(entity, type);
-    }
-
-    public T converterObjectOutputPortToObjectResponse(T entity, Class<T> type) {
-        return modelMapperConfiguration.modelMapper().map(entity, type);
-    }
-
 }
