@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping ( "/api" )
 @AllArgsConstructor
-public class Resource {
+public class ResourceController {
 
     private final InterfaceInputPort interfaceInputPort;
     private final ConverterUtils converterUtils;
